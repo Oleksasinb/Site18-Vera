@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 300px 600px 600px ;
+    grid-template-areas:
+    "header header header"
+    "nav main small"
+    "footer footer footer";
+    gap: 10px;
+}
+.header{
+    grid-area: header;
+    background-color: lightcoral;
+}
+.nav{
+    grid-area: nav;
+    background-color: lightcoral;
+}
+.main{
+    grid-area: main;
+    background-color: lightcoral;
+}
+.footer{
+    grid-area: footer;
+    background-color: lightcoral;
+}
+.small{
+     grid-area: small ;
+    background-color: lightcoral;
+}
